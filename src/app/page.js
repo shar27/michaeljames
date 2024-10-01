@@ -8,6 +8,7 @@ import Sections from "./components/Sections";
 import Paralax from "./components/Paralax";
 import Quote from "./components/Quote";
 import Footer from "./components/Footer";
+import ContactForm from './components/ContactForm';
 
 export default function Home() {
   const [showArrow, setShowArrow] = useState(false);
@@ -63,6 +64,7 @@ export default function Home() {
     <Paralax/>
     <Sections/>
     <Quote/>
+    <ContactForm/>
     <Footer/>
    </div>
   );
