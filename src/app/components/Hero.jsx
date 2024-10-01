@@ -11,7 +11,7 @@ function hero() {
   <Image 
         src={profile} // relative path from the public directory or static path in next.js
         alt="Profile Image" 
-         className="w-full rounded-lg shadow-2xl"
+         className="w-full lg:w-72 rounded-lg shadow-2xl"
        
         
       />
@@ -21,7 +21,11 @@ function hero() {
       <p className="py-6">
       Property Investor, Property Trader, Entrepreneur
       </p>
-      <button className="bg-white border border-black text-black rounded-sm  p-2 font-bold w-32 animate-pulse">Work with me</button>
+      <button className="bg-white border 
+      border-black 
+      text-black 
+      text-xl
+      rounded-sm  p-4 font-bold w-48 animate-pulse">Work with me</button>
     </div>
     <Link href="https://chat.whatsapp.com/E5IRjrEMJJgFyeqZyRAi7I">
         <Image
