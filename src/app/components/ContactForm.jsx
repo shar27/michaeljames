@@ -70,7 +70,7 @@ function ContactForm() {
   };
 
   return (
-    <div className="p-2 lg:p-20">
+    <div className="p-2 lg:p-20 bg-black">
       <h1 className="text-2xl mb-5 text-center">Contact Us</h1>
       <form onSubmit={handleSubmit} className="">
         <div className="mb-4">
