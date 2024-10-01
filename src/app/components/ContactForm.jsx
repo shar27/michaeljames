@@ -70,9 +70,9 @@ function ContactForm() {
   };
 
   return (
-    <div className="p-2">
+    <div className="p-2 lg:p-20">
       <h1 className="text-2xl mb-5 text-center">Contact Us</h1>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="">
         <div className="mb-4">
           <label className="block text-gray-700">First Name</label>
           <input
@@ -115,10 +115,13 @@ function ContactForm() {
             className="textarea textarea-bordered w-full"
             required
           ></textarea>
+            
         </div>
+        <section className="flex justify-center">
         <button type="submit" className="w-full lg:w-48 p-4 text-xl 
         text-white
         bg-black border border-white font-bold rounded-sm">Submit</button>
+        </section>
       </form>
       {successMessage && <p className="mt-5 text-green-500">{successMessage}</p>}
       {errorMessage && <p className="mt-5 text-red-500">{errorMessage}</p>}
