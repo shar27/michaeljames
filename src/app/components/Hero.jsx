@@ -11,9 +11,8 @@ function hero() {
   <Image 
         src={profile} // relative path from the public directory or static path in next.js
         alt="Profile Image" 
-         className="max-w-sm rounded-lg shadow-2xl"
-        width={500} // Adjust the width
-        height={500} // Adjust the height
+         className="w-full rounded-lg shadow-2xl"
+       
         
       />
     

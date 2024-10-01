@@ -1,55 +1,27 @@
-import React from 'react'
+import React from "react";
+import Image from "next/image";
+import Icons from "../components/img/badges2.png";
+import PRS from "../components/img/prs.png";
 
 function Badges() {
   return (
-    <div className="flex justify-between bg-white text-black">    
-    
-    <div className="card w-96 shadow-xl flex justify-between">
-  <figure>
-   
-  </figure>
-  <div className="card-body">
-    <h2 className="card-title">Guaranteed rent</h2>
-    <p>Are you Landlord or Agent?  Find out more about how I can help create an ideal scenario for you below</p>
-    <div className="card-actions justify-end">
-      <button className="btn btn-primary">Learn more</button>
+    <div className="">
+      <h1 className="bg-white border- 0 text-4xl font-bold text-center items-center p-4">
+          Trusted Property Company
+        </h1>
+      <div className=" bg-white text-black">
+        
+        <div className="shadow-xl ">
+          <Image
+            src={Icons} // relative path from the public directory or static path in next.js
+            alt="Profile Image"
+            className="w-full h-4/5 rounded-lg shadow-2xl"
+            // Adjust the height
+          />
+        </div>
+      </div>
     </div>
-  </div>
-  
-</div>
-{/* card 2 */}
-
-<div className="card  w-96 shadow-xl flex justify-between">
-  <figure>
-   
-  </figure>
-  <div className="card-body">
-    <h2 className="card-title">Guaranteed rent</h2>
-    <p>Are you Landlord or Agent?  Find out more about how I can help create an ideal scenario for you below</p>
-    <div className="card-actions justify-end">
-      <button className="btn btn-primary">Learn more</button>
-    </div>
-  </div>
-  
-</div>
-{/* card 3 */}
-
-<div className="card bg-base-100  w-96 shadow-xl flex justify-between">
-  <figure>
-   
-  </figure>
-  <div className="card-body">
-    <h2 className="card-title">Guaranteed rent</h2>
-    <p>Are you Landlord or Agent?  Find out more about how I can help create an ideal scenario for you below</p>
-    <div className="card-actions justify-end">
-      <button className="btn btn-primary">Learn more</button>
-    </div>
-  </div>
-  
-</div>
-</div>
-
-  )
+  );
 }
 
-export default Badges
+export default Badges;
