@@ -74,7 +74,7 @@ function ContactForm() {
       <h1 className="text-2xl mb-5 text-center">Contact Us</h1>
       <form onSubmit={handleSubmit} className="">
         <div className="mb-4">
-          <label className="block text-gray-700">First Name</label>
+          <label className="block text-white">First Name</label>
           <input
             type="text"
             name="firstname"
@@ -85,7 +85,7 @@ function ContactForm() {
           />
         </div>
         <div className="mb-4">
-          <label className="block text-gray-700">Last Name</label>
+          <label className="block text-white">Last Name</label>
           <input
             type="text"
             name="lastname"
@@ -96,7 +96,7 @@ function ContactForm() {
           />
         </div>
         <div className="mb-4">
-          <label className="block text-gray-700">Email</label>
+          <label className="block text-white">Email</label>
           <input
             type="email"
             name="email"
@@ -107,7 +107,7 @@ function ContactForm() {
           />
         </div>
         <div className="mb-4">
-          <label className="block text-gray-700">Message</label>
+          <label className="block text-white">Message</label>
           <textarea
             name="message"
             value={formData.message}
