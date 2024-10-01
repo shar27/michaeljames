@@ -1,4 +1,6 @@
 import React,{useState} from 'react'
+import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
+import { ChevronDownIcon } from '@heroicons/react/20/solid'
 
 function NavBar() {
 
@@ -51,7 +53,7 @@ function NavBar() {
             </svg>
           </div>
           <ul className="MENU-LINK-MOBILE-OPEN list-none flex flex-col items-center 
-          justify-between min-h-[250px] bg-white w-full ">
+          justify-between min-h-[250px] bg-black w-full ">
             <li className="list-none border-b border-gray-400 my-8 uppercase">
               <a className="list-none text-white" href="/About">About</a>
             </li>
@@ -71,26 +73,95 @@ function NavBar() {
           </ul>
         </div>
       </section>
-
+      {/* large screen */}
+      <Menu as="ul" className="relative inline-block text-left">
       <ul className="DESKTOP-MENU hidden lg:flex justify-between text-xl
       
       ">
         <li className="list-none p-2">
           <a className="text-white" href="/About">About</a>
         </li>
+        <MenuButton className="inline-flex
+        
+        gap-x-1.5 
+        p-2 border-none
+        text-white 
+        ">
+          Portfolio Building
+          <ChevronDownIcon aria-hidden="true" className="-mr-1 h-5 w-5 text-gray-400" />
+        </MenuButton>
+        <MenuItems
+        transition
+        className="absolute left-10 z-10 mt-10 w-auto 
+        origin-top-right rounded-md bg-white 
+        shadow-lg ring-1 ring-black ring-opacity-5 
+        transition focus:outline-none 
+        data-[closed]:scale-95 
+        data-[closed]:transform data-[closed]:opacity-0 
+        data-[enter]:duration-100 
+        data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in"
+      >
+      
+          <MenuItem>
+            <a
+              href="#"
+              className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 
+              data-[focus]:text-gray-900"
+            >
+              bespoke-sourcing
+            </a>
+          </MenuItem>
+          <MenuItem>
+            <a
+              href="#"
+              className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
+            >
+             MJ property deals HUB
+            </a>
+          </MenuItem>
+          </MenuItems>
+          
+          
+          <MenuButton className="inline-flex
+        
+        gap-x-1.5 
+        p-2 border-none
+        text-white 
+        ">
+          Land acquisitions
+          <ChevronDownIcon aria-hidden="true" className="-mr-1 h-5 w-5 text-gray-400" />
+        </MenuButton>
+        <MenuItems
+        transition
+        className="absolute left-10 z-10 mt-10 w-auto 
+        origin-top-right rounded-md bg-white 
+        shadow-lg ring-1 ring-black ring-opacity-5 
+        transition focus:outline-none data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in"
+      >
+      
+          <MenuItem>
+            <a
+              href="#"
+              className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 
+              data-[focus]:text-gray-900"
+            >
+              landowner
+            </a>
+          </MenuItem>
+          <MenuItem>
+            <a
+              href="#"
+              className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
+            >
+             landowner-0
+            </a>
+          </MenuItem>
+          </MenuItems>
         <li className="list-none p-2">
-          <a className="text-white" href="/Services">Services</a>
-        </li>
-        <li className="list-none p-2">
-          <a className="text-white" href="/#casestudies">Work</a>
-        </li>
-        <li className="list-none p-2">
-              <a className="text-white" href="/Blog">Blog</a>
-            </li>
-        <li className="list-none p-2">
-          <a className="text-white" href="/#contact">Contact</a>
+          <a className="text-white bg-black border border-white p-3 w-48 text-xl font-bold" href="/#contact">INVEST WITH US</a>
         </li>
       </ul>
+      </Menu>
     </nav>
     <style>{`
     .hideMenuNav {
