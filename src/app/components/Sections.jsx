@@ -5,7 +5,7 @@ function Sections() {
 
     <div className="flex w-full flex-col lg:flex-row">
       {/* image 1 */}
-    <div className="card bg-base-300 rounded-box grid h-32 flex-grow place-items-center">
+    <div className="card bg-base-300 rounded-box grid h-40 lg:h-32 flex-grow place-items-center">
     <div
   className="hero min-h-screen"
   style={{
@@ -19,7 +19,8 @@ function Sections() {
       <p className="mb-5">
       Ever thought about getting into property but didn't have the capital? The Deal Selling Launch Pad teaches hungry individuals how to start their own Deal Packaging business with the potential to make £10,000 per month
       </p>
-      <button className="btn btn-primary">Get Started</button>
+      <button className="text-white bg-black border 
+          border-white p-3 w-48 text-xl font-bold">Get Started</button>
     </div>
   </div>
 </div>
@@ -38,7 +39,8 @@ function Sections() {
       <p className="mb-5">
       I want to train you to start your property investment journey. If you want to start buying assets that you can flip for five or six figure profits or keep as assets that pay you every month, you will learn everything you need to know at this full day of in depth, all secrets revealed training
       </p>
-      <button className="btn btn-primary">Get Started</button>
+      <button className="text-white bg-black border 
+          border-white p-3 w-48 text-xl font-bold">Get Started</button>
     </div>
   </div>
 </div>

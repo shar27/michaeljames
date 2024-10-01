@@ -108,7 +108,7 @@ function NavBar() {
               className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 
               data-[focus]:text-gray-900"
             >
-              bespoke-sourcing
+              Bespoke-sourcing
             </a>
           </MenuItem>
           <MenuItem>
@@ -158,7 +158,8 @@ function NavBar() {
           </MenuItem>
           </MenuItems>
         <li className="list-none p-2">
-          <a className="text-white bg-black border border-white p-3 w-48 text-xl font-bold" href="/#contact">INVEST WITH US</a>
+          <a className="text-white bg-black border 
+          border-white p-3 w-48 text-xl font-bold" href="/#contact">INVEST WITH US</a>
         </li>
       </ul>
       </Menu>
