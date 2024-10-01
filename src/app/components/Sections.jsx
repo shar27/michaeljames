@@ -25,7 +25,7 @@ function Sections() {
 </div>
     </div>
    
-    <div className="card bg-base-300 rounded-box grid h-32 flex-grow place-items-center"><div
+    <div className="card bg-base-300 rounded-box grid h-32 flex-grow place-items-center mt-96 lg:mt-0 "><div
   className="hero min-h-screen"
   style={{
     backgroundImage: "url(https://images.unsplash.com/photo-1581109646900-90f48c86bda4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODh8fG1hbmNoZXN0ZXJ8ZW58MHx8MHx8fDA%3D)",
