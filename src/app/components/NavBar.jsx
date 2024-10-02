@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Link from "next/link";
 import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 
@@ -60,7 +61,9 @@ function NavBar() {
             >
               
             <ul className="menu menu-horizontal px-1 text-white">
-            <li><a>About</a></li>
+           <Link href="/About">
+            <li>About</li>
+            </Link>
             </ul>
           
 
@@ -69,10 +72,10 @@ function NavBar() {
                   <summary className="text-white">Portfolio building</summary>
                   <ul className="p-2 text-white">
                     <li className="mt-2">
-                      <a className="">Bespoke-sourcing</a>
+                      <Link href="BespokeSourcing">Bespoke-sourcing</Link>
                     </li>
                     <li className="mt-2">
-                      <a className="">MJ property deals HUB</a>
+                      <Link href="https://chat.whatsapp.com/E5IRjrEMJJgFyeqZyRAi7I">MJ property deals HUB</Link>
                     </li>
                   </ul>
                 </details>
@@ -82,10 +85,10 @@ function NavBar() {
                   <summary className="text-white">Land acquisitions</summary>
                   <ul className="p-2 text-white">
                     <li className="mt-2">
-                      <a className="">Landowner</a>
+                      <Link href="Landowners">Landowner</Link>
                     </li>
                     <li className="mt-2">
-                      <a className="">Developers</a>
+                     <Link href="Developers">Developers</Link>
                     </li>
                   </ul>
                 </details>
@@ -104,16 +107,17 @@ function NavBar() {
         >
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1">
-            <li><a>About</a></li>
+            <li><Link href="About">About</Link></li>
               <li>
                 <details>
                   <summary>Portfolio building</summary>
                   <ul className="p-2 text-black">
                     <li>
-                      <a>Bespoke-sourcing</a>
+                      <Link href="BespokeSourcing">Bespoke-sourcing</Link>
                     </li>
                     <li>
-                      <a>MJ property deals HUB</a>
+                      <Link href="https://chat.whatsapp.com/E5IRjrEMJJgFyeqZyRAi7I">MJ property deals HUB</Link>
+                      
                     </li>
                   </ul>
                 </details>
@@ -127,10 +131,10 @@ function NavBar() {
                   <summary>Land acquisitions</summary>
                   <ul className="p-2 text-black">
                     <li>
-                      <a>Landowner</a>
+                      <Link href="Landowners">Landowner</Link>
                     </li>
                     <li>
-                      <a>Developers</a>
+                    <Link href="Developers"> Developers</Link>
                     </li>
                   </ul>
                 </details>
