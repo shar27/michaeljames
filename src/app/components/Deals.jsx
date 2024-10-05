@@ -31,9 +31,7 @@ const Deals = () => {
   if (loadingLand || loadingProp) {
     return <div>Loading...</div>;
   }
-  //   console.log(landDeals);
-  console.log(propDeals);
-  console.log(landDeals);
+
   
 
   return (
