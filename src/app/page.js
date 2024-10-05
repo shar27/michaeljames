@@ -43,7 +43,7 @@ export default function Home() {
     {showArrow && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-4 right-4 bg-yellow-300 z-100 text-black p-2 rounded-full"
+          className="fixed bottom-4 right-4 bg-yellow-300 z-100 text-black p-1 lg:p-2 rounded-full"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
