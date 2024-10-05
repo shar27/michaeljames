@@ -8,9 +8,12 @@ import Paralax from "./components/Paralax";
 import Footer from "./components/Footer";
 import Deals from './components/Deals';
 import ContactForm from './components/ContactForm';
+import BottomFooter from './components/BottomFooter';
 
 export default function Home() {
   const [showArrow, setShowArrow] = useState(false);
+
+  const title = 'Michael James Property';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -35,7 +38,7 @@ export default function Home() {
   };
   return (
    <div>
-    <title>Michael James Property</title>
+    <title>{title}</title>
     <NavBar/>
     <Hero/>
     <Badges/>
@@ -65,6 +68,7 @@ export default function Home() {
     <Sections/>
     <ContactForm/>
     <Footer/>
+    <BottomFooter/>
    </div>
   );
 }
