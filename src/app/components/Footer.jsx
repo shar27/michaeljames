@@ -2,13 +2,13 @@ import React from 'react'
 
 function Footer() {
   return (
-    <footer className="footer bg-black text-white  p-10">
+    <footer className="footer bg-black text-white  p-10 mt-24 lg:mt-0">
   <aside>
   <p className="text-2xl font-bold">MichaelJames</p> 
     <p className="text-sm text-center font-bold ml-16">Property</p>
 
 
-    <p>
+    <p className="text-sm text-wrap">
     Michael James Investment Group LTD
       <br />
      
