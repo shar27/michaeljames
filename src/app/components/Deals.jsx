@@ -64,7 +64,7 @@ const Deals = () => {
                 layout="responsive"
               />
               <div className="mt-auto p-5">
-                <Link href={`https://calendly.com/shariqahmed`}>
+                <Link href={`https://calendly.com/michael-u4i/`}>
                   <button className="border border-black text-black p-2 rounded-sm w-full h-12">
                     Learn More
                   </button>
@@ -88,9 +88,9 @@ const Deals = () => {
               <p>{deal.fields.propertyType}</p>
               <p>Rent: ${deal.fields.rent}</p>
               <Image
-                src={`https:${deal.fields.featuredImage.fields.file.url}`}
+                src={`https:${deal.fields.featured.fields.file.url}`}
                 alt={
-                  deal.fields.featuredImage.fields.title ||
+                  deal.fields.featured.fields.title ||
                   "Property Deal Image"
                 }
                 width={500}

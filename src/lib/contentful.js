@@ -18,7 +18,7 @@ export const fetchLandDeals = async () => {
 // property
 export const fetchPropDeals = async () => {
   const response = await client.getEntries({
-    content_type: "deals",
+    content_type: "propertyDeals",
   });
 
   return response.items;
