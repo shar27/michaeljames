@@ -4,8 +4,8 @@ function Footer() {
   return (
     <footer className="footer bg-black text-white  p-10">
   <aside>
-  <p className="text-2xl font-bold italic">MichaelJames</p> 
-    <p className="text-sm text-center font-bold">Property</p>
+  <p className="text-2xl font-bold">MichaelJames</p> 
+    <p className="text-sm text-center font-bold ml-16">Property</p>
 
 
     <p>

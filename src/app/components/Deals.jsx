@@ -57,7 +57,7 @@ const Deals = () => {
               </h2>
 
               <p>{ldeal.fields.propertyType}</p>
-              <p>Purchase Price:£ {ldeal.fields.purchasePrice}</p>
+              <p className="text-xl font-bold">Purchase Price:£ {ldeal.fields.purchasePrice}</p>
               <Image
                 src={`https:${ldeal.fields.featured.fields.file.url}`}
                 alt={ldeal.fields.featured.fields.title || "Land Deal Image"}
@@ -91,7 +91,7 @@ const Deals = () => {
                 {deal.fields.heading}
               </h2>
               <p>{deal.fields.propertyType}</p>
-              <p>Rent: £{deal.fields.rent}</p>
+              <p className="text-xl font-bold">Rent: £{deal.fields.rent}</p>
               <Image
                 src={`https:${deal.fields.featured.fields.file.url}`}
                 alt={

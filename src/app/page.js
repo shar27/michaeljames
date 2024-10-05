@@ -1,12 +1,10 @@
 "use client"
 import {useState, useEffect} from 'react'
-import Image from "next/image";
 import Hero from "./components/Hero";
 import NavBar from "./components/NavBar";
 import Badges from "./components/Badges";
 import Sections from "./components/Sections";
 import Paralax from "./components/Paralax";
-import Quote from "./components/Quote";
 import Footer from "./components/Footer";
 import Deals from './components/Deals';
 import ContactForm from './components/ContactForm';
@@ -37,7 +35,7 @@ export default function Home() {
   };
   return (
    <div>
-    <title>Property deal sourcer</title>
+    <title>Michael James Property</title>
     <NavBar/>
     <Hero/>
     <Badges/>
@@ -65,7 +63,6 @@ export default function Home() {
       )}
     <Paralax/>
     <Sections/>
-    <Quote/>
     <ContactForm/>
     <Footer/>
    </div>

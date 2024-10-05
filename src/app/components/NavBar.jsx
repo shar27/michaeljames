@@ -10,7 +10,7 @@ function NavBar() {
     <div className="flex items-center justify-between   bg-black text-white  z-100 p-4">
       <a href="/">
         {/* <Image  src={logo} alt="logo" height={100} width={100} className="w-full max-w-md" /> */}
-        <p className="text-2xl font-bold italic">MichaelJames</p> 
+        <p className="text-2xl font-bold ">MichaelJames</p> 
         <p className="text-sm text-center font-bold">Property</p>
 
       </a>
