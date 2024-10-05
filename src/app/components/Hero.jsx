@@ -18,9 +18,9 @@ function hero() {
     
     <div>
       <h1 className="text-5xl font-bold">Michael James</h1>
-      <p className="py-6">
+      <h2 className="py-6 text-2xl ">
       Property Investor, Property Trader, Entrepreneur
-      </p>
+      </h2>
       <button className="bg-white border 
       border-black 
       text-black 

@@ -18,6 +18,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
+  font-family: 'League Spartan Variable';
   background: linear-gradient(
       to bottom,
       transparent,
@@ -25,6 +26,18 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+h1, h2,h3,h4,h5,h6{
+  font-family:'Aileron';
+}
+
+p, li, a, button{
+   font-family: 'Montserrat Variable';
+}
+
+/* h2,h3,h4,h5,h6{
+  font-family: 'Formula Condensed';
+} */
 
 @layer utilities {
   .text-balance {

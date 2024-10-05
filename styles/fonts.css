@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'Formula Condensed';
+    src: url('/fonts/FormulaCondensed-Bold.otf') format('opentype');
+    font-weight: bold; /* Use 'bold' for this weight */
+    font-style: normal;
+  }
+  

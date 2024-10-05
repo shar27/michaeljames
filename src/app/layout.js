@@ -1,6 +1,10 @@
 import { Inter } from "next/font/google";
+import '../../styles/fonts.css'
 import "./globals.css";
-
+import '@fontsource-variable/league-spartan';
+import '@fontsource/aileron';
+// Supports weights 100-900
+import '@fontsource-variable/montserrat';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,7 +17,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
        
-      <body className={inter.className}>
+      <body>
       
         {children}
      

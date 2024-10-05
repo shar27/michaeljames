@@ -8,6 +8,7 @@ import Sections from "./components/Sections";
 import Paralax from "./components/Paralax";
 import Quote from "./components/Quote";
 import Footer from "./components/Footer";
+import Deals from './components/Deals';
 import ContactForm from './components/ContactForm';
 
 export default function Home() {
@@ -40,6 +41,7 @@ export default function Home() {
     <NavBar/>
     <Hero/>
     <Badges/>
+    <Deals/>
     {showArrow && (
         <button
           onClick={scrollToTop}

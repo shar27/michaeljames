@@ -9,8 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@contentful/rich-text-react-renderer": "^15.22.11",
+    "@fontsource-variable/league-spartan": "^5.1.0",
+    "@fontsource-variable/montserrat": "^5.1.0",
+    "@fontsource/aileron": "^5.1.0",
+    "@fontsource/league-spartan": "^5.1.0",
     "@headlessui/react": "^2.1.8",
     "@heroicons/react": "^2.1.5",
+    "@next/font": "^14.2.14",
+    "contentful": "^11.0.3",
     "next": "14.2.4",
     "react": "^18",
     "react-dom": "^18"

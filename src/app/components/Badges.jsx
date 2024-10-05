@@ -1,14 +1,10 @@
 import React from "react";
 import Image from "next/image";
 import Icons from "../components/img/badges2.png";
-import PRS from "../components/img/prs.png";
 
 function Badges() {
   return (
     <div className="">
-      <h1 className="bg-white border- 0 text-4xl font-bold text-center items-center p-4">
-          Trusted Property Company
-        </h1>
       <div className=" bg-white text-black">
         
         <div className="shadow-xl ">
