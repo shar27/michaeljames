@@ -1,9 +1,9 @@
 import React from "react";
 import Button from "./Button";
+import Link from "next/link";
 function Sections() {
   return (
     <>
-      
       <div className="flex flex-col lg:flex-row w-full min-h-screen">
         {/* Image 1 */}
         <div className="card bg-base-300 rounded-box flex-grow flex items-center justify-center ">
@@ -28,7 +28,14 @@ function Sections() {
                   individuals how to start their own Deal Packaging business
                   with the potential to make £10,000 per month.
                 </p>
-             <Button text={'Get Started'} bgColor={'bg-black'} color={'text-white'} padding={'p-3'}/>
+                <Link href="/Contact">
+                  <Button
+                    text={"Get Started"}
+                    bgColor={"bg-black"}
+                    color={"text-white"}
+                    padding={"p-3"}
+                  />
+                </Link>{" "}
               </div>
             </div>
           </div>
@@ -58,7 +65,14 @@ function Sections() {
                   month, you will learn everything you need to know at this full
                   day of in-depth, all secrets revealed training.
                 </p>
-             <Button text={'Get Started'} bgColor={'bg-black'} color={'text-white'} padding={'p-3'}/>
+                <Link href="/Contact">
+                  <Button
+                    text={"Get Started"}
+                    bgColor={"bg-black"}
+                    color={"text-white"}
+                    padding={"p-3"}
+                  />
+                </Link>{" "}
               </div>
             </div>
           </div>

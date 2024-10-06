@@ -7,7 +7,7 @@ import Button from "./Button";
 function hero() {
   return (
     <div className="hero bg-black text-white min-h-screen">
-      <div className="hero-content flex-col lg:flex-row-reverse min-h-screen">
+      <div className="hero-content flex-col lg:flex-row-reverse min-h-screen mt-0 lg:mt-20">
         <Image
           src={profile} // relative path from the public directory or static path in next.js
           alt="Profile Image"
@@ -19,7 +19,9 @@ function hero() {
           <h2 className="py-0 lg:py-6 text-xl lg:text-2xl ">
             Property Investor, Property Trader, Entrepreneur
           </h2>
-        <Button text={'INVEST WITH US'} padding={'p-3'}/>
+          <Link href="/Contact">
+        <Button text={'INVEST WITH US'} bgColor={'bg-black'} color={'text-white'} padding={'p-3'}/>
+        </Link>
         </div>
         <Link href="https://chat.whatsapp.com/E5IRjrEMJJgFyeqZyRAi7I">
           <Image

@@ -1,4 +1,6 @@
 import React from 'react'
+import Button from './Button'
+import Link from 'next/link'
 
 function Paralax() {
   return (
@@ -15,8 +17,9 @@ function Paralax() {
         <p className="mb-5">
         Are you Landlord or Agent?  Find out more about how I can help create an ideal scenario for you below
         </p>
-        <button className="text-white bg-black border 
-          border-white p-3 w-48 text-xl font-bold">Get Started</button>
+        <Link href="/Contact">
+        <Button text={'Get Started'} bgColor={'bg-black'} color={'text-white'} padding={'p-3'}/>
+        </Link>
       </div>
     </div>
   </div>

@@ -54,7 +54,7 @@ function NavBar() {
             </ul>
           
 
-            <li>
+        
                 <details>
                   <summary className="text-white">Portfolio building</summary>
                   <ul className="p-2 text-white">
@@ -62,11 +62,12 @@ function NavBar() {
                       <Link href="BespokeSourcing">Bespoke-sourcing</Link>
                     </li>
                     <li className="mt-2">
-                      <Link href="https://chat.whatsapp.com/E5IRjrEMJJgFyeqZyRAi7I">MJ property deals HUB</Link>
+                      <Link href="https://chat.whatsapp.com/E5IRjrEMJJgFyeqZyRAi7I">
+                      MJ property deals HUB</Link>
                     </li>
                   </ul>
                 </details>
-              </li>
+           
               <li>
                 <details>
                   <summary className="text-white">Land acquisitions</summary>
@@ -108,7 +109,7 @@ function NavBar() {
                     <li>
                       <Link href="BespokeSourcing">Bespoke-sourcing</Link>
                     </li>
-                    <li>
+                    <li className="">
                       <Link href="https://chat.whatsapp.com/E5IRjrEMJJgFyeqZyRAi7I">MJ property deals HUB</Link>
                       
                     </li>
@@ -133,7 +134,7 @@ function NavBar() {
                 </details>
               </li>
             </ul>
-          </div>
+          </div>     
           <li className="list-none p-2">
           <Link href="/Contact">
           <Button text={'INVEST WITH US'} padding={'p-3'}/>
