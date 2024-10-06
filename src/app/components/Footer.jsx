@@ -21,14 +21,14 @@ function Footer() {
   <nav>
     <h6 className="footer-title">Useful Links</h6>
     <Link href="/Compliance" className="link link-hover">Compliance</Link>
-    <Link href="/Compliance" className="link link-hover">Design</Link>
-    <Link href="/Compliance" className="link link-hover">About</Link>
-    <Link href="/Compliance" className="link link-hover">Sourcing Services</Link>
+    <Link href="/About" className="link link-hover">About</Link>
+    <Link href="/BespokeSourcing" className="link link-hover">Sourcing Services</Link>
   </nav>
   <nav>
     <h6 className="footer-title">Contact</h6>
     <Link href="/Compliance" className="link link-hover"> T: 07763868132</Link>
     <Link href="/Compliance" className="link link-hover">  E: Michael @michaeljamesproperty.co.uk</Link>
+    <Link href="/Contact" className="link link-hover">Contact us</Link>
  
   </nav>
   <nav>
