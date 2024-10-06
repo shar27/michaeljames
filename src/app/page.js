@@ -7,7 +7,7 @@ import Sections from "./components/Sections";
 import Paralax from "./components/Paralax";
 import Footer from "./components/Footer";
 import Deals from "./components/Deals";
-import ContactForm from "./components/ContactForm";
+import Services from "./components/Services";
 
 export default function Home() {
   const [showArrow, setShowArrow] = useState(false);
@@ -64,6 +64,7 @@ export default function Home() {
         </button>
       )}
       <Sections />
+      <Services/>
       <Paralax />
       <Footer />
     </div>
