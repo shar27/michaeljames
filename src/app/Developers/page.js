@@ -30,7 +30,9 @@ export default function Developers() {
               We have extensive experience and a team of experts that can help
               evaluate your land and assist in getting planning approval.
             </p>
-            <Button text="Sell your land" color="text-white" bgColor="bg-black" />
+            <Link href="Contact">
+            <Button text="Sell your land" color="text-white" bgColor="bg-black" padding={'p-3'} />
+            </Link>
           </div>
         </div>
       </div>
@@ -38,16 +40,18 @@ export default function Developers() {
       <div className="bg-black text-white h-32 p-5 text-5xl text-center font-bold">
         <h2>Our Criteria</h2>
       </div>
-      <div className="bg-black text-white text-center text-2xl">
-        If you received a letter please{" "}
-      <Link href="http://landoptionsltd.com/#"><span className="text-blue-300 text-underline">Click Here</span> </Link>to make contact.
+      <div className="bg-black text-white text-center text-3xl">
+        If you received a letter please{" "}<br/>
+      <Link href="Contact">
+      <Button text={'CLICK HERE'} padding={'p-3'}/>
+      <br/> </Link>to make contact.
       </div>
       {/* steps */}
       <div className="bg-black  ">
         <div className=" text-white h-auto p-5  text-center font-bold  grid grid-cols-1 lg:grid-cols-3 ">
           <div>
             <h3 className="text-5xl">01</h3>
-            <h3 className="text-2xl mt-3">What we are looking for</h3>
+            <h3 className="text-3xl mt-3">What we are looking for</h3>
             <ul className="mt-4 p-4  list-none text-left">
               <li>A large rear or side garden?</li>
               <li>A house or bungalow situated on a large or corner plot?</li>
@@ -64,7 +68,7 @@ export default function Developers() {
           </div>
           <div>
             <h3 className="text-5xl">02</h3>
-            <h3 className="text-2xl mt-3">
+            <h3 className="text-3xl mt-3">
               Lets meet and discuss your options
             </h3>
             <p className="mt-4 p-4  text-left">
@@ -91,15 +95,17 @@ export default function Developers() {
                 partners do)
               </li>
             </ul>
-            <p className="mt-4">
-              <Link href="/">
-              <Button text="Click here to book" color="text-white" bgColor="bg-black" />
+          
+            <section className="mt-2 mb-2">
+            <Link href="https://calendly.com/michael-u4i/">
+              <Button text="Book Call" color="text-white" bgColor="bg-black" padding={'p-3'} />
               </Link>
-            </p>
+              </section>
+         
           </div>
           <div>
             <h3 className="text-5xl">03</h3>
-            <h3 className="text-2xl mt-3">What can we offer?</h3>
+            <h3 className="text-3xl mt-3">What can we offer?</h3>
 
             <ul className="mt-4 p-2 list-none text-left">
               <li>
