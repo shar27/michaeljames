@@ -82,6 +82,17 @@ function NavBar() {
                 </details>
               </li>
             </ul>
+            <ul className="menu menu-horizontal px-1 text-white">
+            <Link 
+           className="text-white bg-black border 
+          border-white p-3 w-52 text-xl font-bold"
+              href="/Contact"
+              
+            >
+              INVEST WITH US
+              </Link>
+            </ul>
+          
           </div>
         </section>
         {/* large screen */}
