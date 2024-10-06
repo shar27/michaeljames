@@ -130,13 +130,14 @@ function NavBar() {
             </ul>
           </div>
           <li className="list-none p-2">
-            <a
-              className="text-white bg-black border 
+           <Link
+           className="text-white bg-black border 
           border-white p-3 w-48 text-xl font-bold"
-              href="/#contact"
+              href="/Contact"
+              
             >
               INVEST WITH US
-            </a>
+              </Link>
           </li>
         </ul>
       </nav>
