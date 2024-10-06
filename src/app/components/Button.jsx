@@ -1,11 +1,10 @@
 import React from 'react'
 
-function Button({text, color, bgColor}) {
+function Button({text, color, bgColor, padding}) {
   return (
-    // <button className="text-white bg-black border 
-    // border-white p-3 w-48 text-xl font-bold">{text}</button>
+   
 
-    <button className={` border border-white p-3 w-48 text-xl font-bold ${color} ${bgColor} `}>
+    <button className={` border border-white ${padding} w-52 text-xl font-bold ${color} ${bgColor} `}>
       {text}
     </button>
   )

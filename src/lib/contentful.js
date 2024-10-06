@@ -23,3 +23,11 @@ export const fetchPropDeals = async () => {
 
   return response.items;
 };
+
+export const fetchServices = async () => {
+  const response = await client.getEntries({
+    content_type: "services",
+  });
+
+  return response.items;
+};

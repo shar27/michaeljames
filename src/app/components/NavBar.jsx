@@ -1,8 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
-import logo from './img/logo.jpg'
-import Image from "next/image";
+import Button from "./Button";
 
 function NavBar() {
   const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
@@ -83,14 +82,9 @@ function NavBar() {
               </li>
             </ul>
             <ul className="menu menu-horizontal px-1 text-white">
-            <Link 
-           className="text-white bg-black border 
-          border-white p-3 w-52 text-xl font-bold"
-              href="/Contact"
-              
-            >
-              INVEST WITH US
-              </Link>
+         <Link href="/Contact">
+          <Button text={'INVEST WITH US'} padding={'p-3'}/>
+          </Link>
             </ul>
           
           </div>
@@ -141,14 +135,9 @@ function NavBar() {
             </ul>
           </div>
           <li className="list-none p-2">
-           <Link
-           className="text-white bg-black border 
-          border-white p-3 w-48 text-xl font-bold"
-              href="/Contact"
-              
-            >
-              INVEST WITH US
-              </Link>
+          <Link href="/Contact">
+          <Button text={'INVEST WITH US'} padding={'p-3'}/>
+          </Link>
           </li>
         </ul>
       </nav>

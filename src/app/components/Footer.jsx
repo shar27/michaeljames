@@ -33,9 +33,9 @@ function Footer() {
   </nav>
   <nav>
     <h6 className="footer-title">Information</h6>
-    <Link href="/Compliance" className="link link-hover">Privacy Policy</Link>
-    <Link href="/Compliance" className="link link-hover">Refund Policy</Link>
-    <Link href="/Compliance" className="link link-hover">Complaints Procedure</Link>
+    <Link href="/PrivacyPolicy" className="link link-hover">Privacy Policy</Link>
+    <Link href="/RefundPolicy" className="link link-hover">Refund Policy</Link>
+    <Link href="/ComplaintsProcedure" className="link link-hover">Complaints Procedure</Link>
   </nav>
   
 </footer>
