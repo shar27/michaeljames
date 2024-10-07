@@ -1,16 +1,34 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import Button from "./Button";
+import { fetchLogo } from "@/lib/contentful";
 
 function NavBar() {
   const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
+
+
+  const [logo, setLogo] = useState([]); // State to store fetched land deals
+  // Fetch land deals
+  useEffect(() => {
+    const getLogo = async () => {
+      const logo = await fetchLogo();
+      setLogo(logo);
+    };
+    getLogo();
+  }, []); // Runs only once when component mounts
+
+  
+  
   return (
     <div className="flex items-center justify-between   bg-black text-white  z-100 p-4">
       <a href="/">
-        {/* <Image  src={logo} alt="logo" height={100} width={100} className="w-full max-w-md" /> */}
-        <p className="text-2xl font-bold ">MichaelJames</p> 
-        <p className="text-sm text-center font-bold">Property</p>
+       {logo.map((l) => (
+        <img    src={`https:${l.fields.logo.fields.file.url}`} 
+        alt="logo" className="w-72" />
+       ))}
+        
 
       </a>
       <nav>

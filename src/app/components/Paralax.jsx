@@ -23,7 +23,7 @@ function Paralax() {
           <img
             src={`https:${p.fields.paralax.fields.file.url}`} 
             alt="paralax"
-            className="bg-fixed"
+            className="bg-fixed min-h-screen"
           />
         ))}
     <div className="hero-overlay bg-opacity-60"></div>

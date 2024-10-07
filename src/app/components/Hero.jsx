@@ -46,7 +46,7 @@ function hero() {
         </div>
         <Link href="https://chat.whatsapp.com/E5IRjrEMJJgFyeqZyRAi7I">
           <Image
-            className="cursor-pointer fixed bottom-2 right-10 lg:right-12 z-100 w-16 h-16 "
+            className="cursor-pointer fixed bottom-0 right-10 lg:right-12 z-100 w-16 h-16 "
             src={whatsapp}
             width={50}
             height={50}

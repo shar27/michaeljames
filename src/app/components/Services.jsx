@@ -4,6 +4,7 @@ import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import { fetchServices } from "../../lib/contentful";
 import Image from "next/image";
 import Link from "next/link";
+import Button from "./Button";
 const Services = () => {
   const [serviceSection, setServiceSection] = useState([]); // State to store fetched land deals
   const [loadingserviceSection, setLoadingServiceSection] = useState(true); // Separate loading state for land deals
@@ -27,7 +28,7 @@ const Services = () => {
   return (
     <div>
       <h2 className="bg-white text-black text-center text-5xl">
-        Services
+        Services I Offer
       </h2>
       <h3 className="bg-white text-black text-center text-3xl">
         Can't find what you're looking for? Sign up for{" "}
@@ -50,13 +51,13 @@ const Services = () => {
 
               
               <div>{documentToReactComponents(ldeal.fields.description)}</div>
-              <Image
+              {/* <Image
                 src={`https:${ldeal.fields.featured.fields.file.url}`}
                 alt={ldeal.fields.featured.fields.title || "Our Services"}
                 width={500}
                 height={300}
                 layout="responsive"
-              />
+              /> */}
               <div className="mt-auto p-5">
                 <Link href={ldeal.fields.link}>
                   <button className="border border-black text-black p-2 rounded-sm w-full h-12">
@@ -68,6 +69,10 @@ const Services = () => {
           ))}
         </div>
       )}
+      <section className="text-center p-2">
+      <p className="text-center bg-white ">If you believe we can add value to each other in a way that’s not covered above, don’t hesitate to reach out. I’m always open to new ideas.</p>
+      <Button text={'Speak to us'} padding={'p-3'} bgColor={'bg-black'} color={'text-white'}/>
+      </section>
     </div>
   );
 };

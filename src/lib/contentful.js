@@ -23,6 +23,14 @@ export const fetchHero = async () => {
   return response.items;
 };
 
+export const fetchLogo = async () => {
+  const response = await client.getEntries({
+    content_type: "logo",
+  });
+
+  return response.items;
+};
+
 export const fetchParalax = async () => {
   const response = await client.getEntries({
     content_type: "paralax",

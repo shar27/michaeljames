@@ -1,14 +1,28 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import Link from 'next/link';
+import { fetchLogo } from "@/lib/contentful";
+
 function Footer() {
+  const [logo, setLogo] = useState([]); // State to store fetched land deals
+  // Fetch land deals
+  useEffect(() => {
+    const getLogo = async () => {
+      const logo = await fetchLogo();
+      setLogo(logo);
+    };
+    getLogo();
+  }, []); // Runs only once when component mounts
   const title = 'Michael James Property';
     const currentYear = new Date().getFullYear();
   return (
     <>
     <footer className="footer bg-black text-white  p-10">
   <aside>
-  <p className="text-2xl font-bold">MichaelJames</p> 
-    <p className="text-sm text-center font-bold ml-16">Property</p>
+  {logo.map((l) => (
+        <img    src={`https:${l.fields.logo.fields.file.url}`} 
+        alt="logo" className="w-72" />
+       ))}
+        
 
 
     <p className="text-sm text-wrap">
