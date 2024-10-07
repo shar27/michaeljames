@@ -71,8 +71,8 @@ const Services = () => {
           ))}
         </div>
       )}
-      <section className="text-center p-2">
-      <p className="text-center bg-white ">If you believe we can add value to each other in a way that’s not covered above, don’t hesitate to reach out. I’m always open to new ideas.</p>
+      <section className="text-center p-2 bg-white">
+      <p className="text-center bg-white text-black">If you believe we can add value to each other in a way that’s not covered above, don’t hesitate to reach out. I’m always open to new ideas.</p>
       <Button text={'Speak to us'} padding={'p-3'} bgColor={'bg-black'} color={'text-white'}/>
       </section>
     </div>
