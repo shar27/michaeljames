@@ -15,6 +15,38 @@ export const fetchLandDeals = async () => {
   return response.items;
 };
 
+export const fetchHero = async () => {
+  const response = await client.getEntries({
+    content_type: "hero",
+  });
+
+  return response.items;
+};
+
+export const fetchParalax = async () => {
+  const response = await client.getEntries({
+    content_type: "paralax",
+  });
+
+  return response.items;
+};
+
+export const fetchSectionOne = async () => {
+  const response = await client.getEntries({
+    content_type: "sectionOne",
+  });
+
+  return response.items;
+};
+
+export const fetchSectionTwo = async () => {
+  const response = await client.getEntries({
+    content_type: "sectionTwo",
+  });
+
+  return response.items;
+};
+
 // property
 export const fetchPropDeals = async () => {
   const response = await client.getEntries({
