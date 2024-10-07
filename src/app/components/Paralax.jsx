@@ -1,15 +1,31 @@
-import React from 'react'
+import React,{useState, useEffect} from 'react'
 import Button from './Button'
+import { fetchParalax } from '@/lib/contentful'
 import Link from 'next/link'
 
 function Paralax() {
+  const [paralax, setParalax] = useState([]); // State to store fetched land deals
+  // Fetch land deals
+  useEffect(() => {
+    const getParalax = async () => {
+      const paralaxImg = await fetchParalax();
+      setParalax(paralaxImg);
+      
+    };
+    getParalax();
+  }, []); // Runs only once when component mounts
+
   return (
     <div>
     <div
-    className="hero min-h-screen bg-fixed "
-    style={{
-      backgroundImage: "url(https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YXBhcnRtZW50fGVufDB8MXwwfHx8Mg%3D%3D)",
-    }}>
+    className="hero min-h-screen bg-fixed">
+      {paralax.map((p) => (
+          <img
+            src={`https:${p.fields.paralax.fields.file.url}`} 
+            alt="paralax"
+            className="bg-fixed"
+          />
+        ))}
     <div className="hero-overlay bg-opacity-60"></div>
     <div className="hero-content text-neutral-content text-center">
       <div className="max-w-md">

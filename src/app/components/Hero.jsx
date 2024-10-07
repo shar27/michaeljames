@@ -18,7 +18,6 @@ function hero() {
     getHero();
   }, []); // Runs only once when component mounts
 
-  console.log(hero);
 
   return (
     <div className="hero bg-black text-white min-h-screen">

@@ -40,8 +40,7 @@ export default function Home() {
       <title>{title}</title>
       <NavBar />
       <Hero />
-      <Badges />
-      <Deals />
+      {/* <Deals /> */}
       {showArrow && (
         <button
           onClick={scrollToTop}
