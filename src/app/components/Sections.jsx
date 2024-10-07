@@ -1,7 +1,33 @@
-import React from "react";
+import React,{useState, useEffect} from "react";
+import { fetchSectionOne, fetchSectionTwo } from "@/lib/contentful";
 import Button from "./Button";
 import Link from "next/link";
 function Sections() {
+  const [sectionOne, setSectionOne] = useState([]); // State to store fetched land deals
+  const [sectionTwo, setSectionTwo] = useState([]); // State to store fetched land deals
+
+  // Fetch land deals
+  useEffect(() => {
+    const getSectionOne = async () => {
+      const sectionOneImg = await fetchSectionOne();
+      setSectionOne(sectionOneImg);
+      
+    };
+    getSectionOne();
+  }, []); // Runs only once when component mounts
+
+  useEffect(() => {
+    const getSectionTwo = async () => {
+      const sectionTwoImg = await fetchSectionTwo();
+      setSectionTwo(sectionTwoImg);
+      
+    };
+    getSectionTwo();
+  }, []); // Runs only once when component mounts
+
+  console.log(sectionOne);
+  
+
   return (
     <>
       <div className="flex flex-col lg:flex-row w-full min-h-screen">
@@ -9,14 +35,16 @@ function Sections() {
         <div className="card bg-base-300 rounded-box flex-grow flex items-center justify-center ">
           <div
             className="hero w-full min-h-screen "
-            style={{
-              backgroundImage:
-                "url(https://images.unsplash.com/photo-1581109646900-90f48c86bda4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODh8fG1hbmNoZXN0ZXJ8ZW58MHx8MHx8fDA%3D)",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
           >
+              {sectionOne.map((s1) => (
+          <img
+            src={`https:${s1.fields.sectionOne.fields.file.url}`} // relative path from the public directory or static path in next.js
+            alt="Profile Image"
+            className="object-cover min-h-screen"
+          />
+        ))}
             <div className="hero-overlay bg-opacity-60"></div>
+       
             <div className="hero-content text-neutral-content text-center">
               <div className="max-w-md">
                 <h1 className="mb-5 text-5xl font-bold">
@@ -44,15 +72,17 @@ function Sections() {
         {/* Image 2 */}
         <div className="card bg-base-300 rounded-box flex-grow flex items-center justify-center">
           <div
-            className="hero w-full min-h-screen"
-            style={{
-              backgroundImage:
-                "url(https://images.unsplash.com/photo-1581109646900-90f48c86bda4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODh8fG1hbmNoZXN0ZXJ8ZW58MHx8MHx8fDA%3D)",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-          >
-            <div className="hero-overlay bg-opacity-60"></div>
+            className="hero w-full min-h-screen">
+              {sectionTwo.map((s2) => (
+          <img
+            src={`https:${s2.fields.sectionTwo.fields.file.url}`} // relative path from the public directory or static path in next.js
+            alt="Profile Image"
+            className="object-cover min-h-screen "
+          />
+        ))}
+            <div className="hero-overlay bg-opacity-60">
+        
+            </div>
             <div className="hero-content text-neutral-content text-center">
               <div className="max-w-md">
                 <h1 className="mb-5 text-5xl font-bold">

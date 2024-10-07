@@ -27,6 +27,7 @@ const Services = () => {
 
   return (
     <div>
+      <section className="p-4">
       <h2 className="bg-white text-black text-center text-5xl">
         Services I Offer
       </h2>
@@ -36,6 +37,7 @@ const Services = () => {
           Bespoke-sourcing
         </Link>{" "}
       </h3>
+      </section>
       {/* Display land deals */}
       {serviceSection.length === 0 ? (
         <div></div>
