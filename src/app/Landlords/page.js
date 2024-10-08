@@ -46,11 +46,11 @@ function Landlords() {
             </h3>
 
             <ul className="list-disc pl-6">
-              <li>Guaranteed rent with contracts up to 5 years</li>
-              <li>No missed payments</li>
-              <li>No agency fees</li>
-              <li>Regular maintenance and clean</li>
-              <li>Hassle-free experience</li>
+              <li> ✔ Guaranteed rent with contracts up to 5 years</li>
+              <li> ✔ No missed payments</li>
+              <li> ✔ No agency fees</li>
+              <li> ✔ Regular maintenance and clean</li>
+              <li> ✔ Hassle-free experience</li>
             </ul>
           </div>
 
