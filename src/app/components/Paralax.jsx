@@ -33,9 +33,14 @@ function Paralax() {
         <p className="mb-5">
         Are you Landlord or Agent?  Find out more about how I can help create an ideal scenario for you below
         </p>
-        <Link href="/Contact">
-        <Button text={'Get Started'} bgColor={'bg-black'} color={'text-white'} padding={'p-3'}/>
+        <section className="flex flex-col lg:justify-center gap-5">
+        <Link href="/Agents">
+        <Button text={'Agents'} bgColor={'bg-black'} color={'text-white'} padding={'p-3'}/>
         </Link>
+        <Link href="/Landlords">
+        <Button text={'Landlords'} bgColor={'bg-black'} color={'text-white'} padding={'p-3'}/>
+        </Link>
+        </section>
       </div>
     </div>
   </div>
