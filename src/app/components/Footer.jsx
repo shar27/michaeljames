@@ -2,6 +2,9 @@
 import React, {useEffect, useState} from 'react'
 import Link from 'next/link';
 import { fetchLogo } from "@/lib/contentful";
+import { faFacebook, faLinkedin, faXTwitter, faSqaureXTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 
 function Footer() {
   const [logo, setLogo] = useState([]); // State to store fetched land deals
@@ -32,6 +35,7 @@ function Footer() {
      
     
     </p>
+   
   </aside>
   <nav>
     <h6 className="footer-title">Useful Links</h6>
@@ -54,7 +58,12 @@ function Footer() {
   </nav>
   
 </footer>
-<div className="text-center text-black bg-white font-bold "><p>© {title} {currentYear}</p></div>
+<div className="text-center text-black bg-white font-bold "><p>© {title} {currentYear}  <Link href="https://www.facebook.com/profile.php?id=100000656542151">
+          <FontAwesomeIcon icon={faFacebook} size="lg" className="mx-2 mt-2"  />
+          </Link>
+          <FontAwesomeIcon icon={faLinkedin} size="lg" className="mx-2 mt-2"  />
+          <FontAwesomeIcon icon={faXTwitter} size="lg" className="mx-2 mt-2"  />
+          <FontAwesomeIcon icon={faYoutube} size="lg" className="mx-2 mt-2"  /></p></div>
 </>
   )
 }
